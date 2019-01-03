@@ -103,16 +103,16 @@ impl App {
 
         // TODO
         // Collision check units
-        for &mut player in &mut self.players {
-            if (player.moving) {
-                for &oplayer in &self.players {
-                    if (player.check_collide_player(oplayer)) {
-                        player.moving = false;
-                    }
-                }
-                player.step();
-            }
-        }
+        // for &mut player in &mut self.players {
+        //     if (player.moving) {
+        //         for &oplayer in &self.players {
+        //             if (player.check_collide_player(oplayer)) {
+        //                 player.moving = false;
+        //             }
+        //         }
+        //         player.step();
+        //     }
+        // }
     }
 
     fn press(&mut self, args: &Button) {
